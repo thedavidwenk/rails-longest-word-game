@@ -1,6 +1,7 @@
 <h1>Result</h1>
-<p>your word: <strong><%= @answer %></strong></p>
+<p>Your word: <strong><%= @answer %></strong></p>
 <p>Your letters: <%= @letters.join(', ') %></p>
 <p>Status: <%= @response %></p>
+<p>Total Points: <%=  session[:points] %></p>
 
 <%= link_to "Play again", new_path %>
