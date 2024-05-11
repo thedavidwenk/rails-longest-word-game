@@ -62,3 +62,12 @@
   </div>  
 </div>
 
+<div class="mt-4">
+  <form action="score" data-turbo="false" method="post">
+    <label class="mb-1" for="answer">What is the longest word you can find?</label>
+    <div class="input-group mb-3">
+      <input id="answer" class="form-control" type="text" name="answer" value="<%= params[:answer] %>">
+      <input class="btn btn-outline-secondary" type="submit" value="Play">
+    </div>
+  </form>
+</div>
